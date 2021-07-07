@@ -6,28 +6,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+<h1>A Cup of Joy Coffee!</h1>
+<div class="wrapper">
+    <div class="header">
+        <p class="brand"> A Cup of Joy
+        <p class="tagline">Get up! Get Coffee! Be Happy!</p>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
+    </div>
+    <div class="main-body">
+        <div class="search-results">
+            <div id="welcome-text">
+                <p #head-intro>"Welcome to 'A Cup of Joy Coffee! "Better beans. Better coffee. Better planet."
+                <hr>
+            </div>
+            <div id="coffee">
+            </div>
+        </div>
+<div class="coffee-search">
+    <div class="searchBar">
+        <input type="text" id="coffeeSearch" oninput="updateCoffees()"name="search">
+        <div id="roast">
 
-        <input type="text" id="renderCoffees()" onkeyup="renderCoffees()" placeholder="Search for names..">
+</div>
 
-    </form>
+        <form>
+            <label for="roast-selection"></label>
+            <select id="roast-selection">
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <input id="submit" type="submit" />
+
+
+
+        </form>
 
 
 
 
-    <div id="coffees"></div>
+        <div id="coffees"></div>
 
 
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
