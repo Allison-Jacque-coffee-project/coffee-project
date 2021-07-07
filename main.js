@@ -9,6 +9,8 @@ function renderCoffee(coffee) {
     return html;
 }
 
+var divCoffee=document.querySelector("#coffee");
+
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -22,6 +24,8 @@ function updateCoffees(e) {
     var selectedRoast =roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
+        var name =coffee.name;
+        name = name.toLowerCase();
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
