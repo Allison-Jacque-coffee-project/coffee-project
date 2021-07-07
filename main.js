@@ -30,7 +30,7 @@ function updateCoffees(e) {
 }
 
 function updateSearch(){
-var searchString = searchBar.value;
+var searchString = searchBar.value
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.name === searchString) {
