@@ -14,3 +14,113 @@ html,body, p{
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    color: sandybrown;
+    font-family: "fantasy";
+    font-size: 17px;
+    line-height: 2.0;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+@media(min-width:320px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 10vw 80vw 5vw;
+        grid-template-rows: 5vh 15vh 75vh 5vh
+    }
+}
+
+.header {
+    align-self: center;
+    text-align: center;
+    grid-row: 1;
+    grid-column:1/4;
+}
+
+p.brand {
+    font-size: 2rem;
+    background-color: #352300e0;
+}
+
+p.tagline {
+    font-size: 1rem;
+    background-color:  #352300e0;
+}
+
+.main-body{
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.search-results {
+    grid-row: 2;
+}
+
+#welcome-text {
+    background-color: #352300e0;
+    text-align: left;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 5rem;
+}
+
+#coffee {
+    height: 100%;
+    overflow: scroll;
+}
+
+.card-container{
+    height: 35vh;
+    text-align: center;
+    width: 70%;
+    margin: 5rem auto;
+    box-shadow: 0 10px 10px 0px #777;
+}
+
+div.container {
+    padding: 2rem;
+}
+
+div.coffee-search {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.searchBar{
+    display: inline-block;
+}
+
+.coffee-search select{
+    width: 30vw;
+}
+
+#roast {
+    display: inline-block;
+}
+
+footer {
+    grid-column: 2/3;
+    grid-row: 4;
+    text-align: center;
+}
+
+@media (min-width: 550px){
+}
+
+@media(min-width: 750px){
+}
+
+@media(min-width: 1000px){
+
+}
+
+@media(min-width: 1200px){
+
+}
