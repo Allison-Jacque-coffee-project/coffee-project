@@ -34,6 +34,15 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
+function addNewCoffee (coffee) {
+    var selectedRoast =roastSelection2.value;
+    var searchString = addCoffee.value
+    var filteredCoffees = [];
+    if (searchString === "string"){
+        coffees.push(coffee);
+    }
+}
+
 // function updateSearch(){
 // var searchString = searchBar.value
 //     var filteredCoffees = [];
@@ -67,6 +76,8 @@ var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var searchBar = document.querySelector("#myInput");
+var addCoffee = document.querySelector("#addNewCoffee");
+var roastSelection2 = document.querySelector('#roast-strength');
 
 
 tbody.innerHTML = renderCoffees(coffees.reverse());
@@ -74,3 +85,5 @@ tbody.innerHTML = renderCoffees(coffees.reverse());
 submitButton.addEventListener('click', updateCoffees);
 searchBar.addEventListener("keyup", updateCoffees);
 roastSelection.addEventListener("change",updateCoffees);
+addCoffee.addEventListener("submit",addNewCoffee);
+roastSelection2.addEventListener("submit",addNewCoffee);
